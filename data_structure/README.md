@@ -1,7 +1,7 @@
 # Data Structure (자료구조)
 
 
-##  <a href="https://github.com/dh0728/Computer_Science/blob/master/data_structure/complexity.md#complexity-%EB%B3%B5%EC%9E%A1%EB%8F%84"> 복잡도 🗒️</a>
+##  복잡도 🗒️<a href="https://github.com/dh0728/Computer_Science/blob/master/data_structure/complexity.md#complexity-%EB%B3%B5%EC%9E%A1%EB%8F%84">▶️</a>
 <ul>
   <li>시간 복잡도</li>
   <li>시간 복잡도</li>
