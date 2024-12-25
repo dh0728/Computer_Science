@@ -18,7 +18,7 @@
     <p>Database(데이터베이스)</p>
   </li>
   <li>
-    <p>algorithm(알고리즘)</p>
+    <p><a href="https://github.com/dh0728/Computer_Science/blob/master/algorithm/READMD.md#algorithm">algorithm(알고리즘)</a></p>
   </li>
 </ul>
 
