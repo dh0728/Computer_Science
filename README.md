@@ -3,7 +3,7 @@
 ## Contents
 <ul>
   <li>
-    <p>Data Structure(자료구조)</p>
+    <p><a href="https://github.com/dh0728/Computer_Science/tree/master/data_structure#data-structure-%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0"> Data Structure(자료구조)</a></p>
   </li>
   <li>
     <p>Network(네트워크)</p>
