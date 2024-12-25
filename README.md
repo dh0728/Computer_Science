@@ -18,7 +18,8 @@
     <p>Database(데이터베이스)</p>
   </li>
   <li>
-    <p>Data Structure(자료구조)</p>
+    <p>algorithm(알고리즘)</p>
+  </li>
 </ul>
 
 ## About
