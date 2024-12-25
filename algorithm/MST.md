@@ -21,6 +21,7 @@
 
 ### Spannging Tree의 사용 사례
 통신 네트워크 구축
+
 <img src="./images/Spanning-tree-using.png" width="50%" height="50%">
 
 <ul>
