@@ -83,9 +83,9 @@
 </ul>
 
 ## MST의 구현 방법
-### 1. <a href="">Kruskal 알로리즘</a>
+### 1. <a href="https://github.com/dh0728/Computer_Science/blob/master/algorithm/kruskal.md#kruskal-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98">Kruskal 알로리즘</a>
 
-### 2. <a href="">Prim 알고리즘</a>
+### 2. <a href="https://github.com/dh0728/Computer_Science/blob/master/algorithm/kruskal.md#kruskal-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98">Prim 알고리즘</a>
 
 
 ## References
