@@ -83,9 +83,9 @@
 </ul>
 
 ## MST의 구현 방법
-### 1. Kruskal 알로리즘
+### 1. <a href="">Kruskal 알로리즘</a>
 
-### 2. Prim 알고리즘
+### 2. <a href="">Prim 알고리즘</a>
 
 
 ## References
