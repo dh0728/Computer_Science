@@ -25,19 +25,22 @@
 3. Fail Over 불가
     - master에서 Error가 발생 했을 경우 Slave로 Failover하는 기능을 지원하지 않느다. Slave 역시 Master와 Log 위치가 다르다면 관리자가 작업을 해야 함.
 
+<br>
 
 ## 📌 Replication의 분류 기준
 Replication(복제)은 크게 두 가지 기준으로 분류할 수 있다다.
 - 동기성 기준(Synchronous vs. Asynchronous)
 - 복제 방식 기준(Physical vs. Logical)
 
-### ✅ 1. 동기성 기준(Synchronous vs. Asynchronous)
+<br>
+
+## ✅ 1. 동기성 기준(Synchronous vs. Asynchronous)
 데이터베이스에서 데이터를 복제하는 방식은 크게 동기 방식과 비동기 방식이 있다. 
 
 - **동기 방식** : Master 노드에 데이터 변경이 발생할 경우 Slave 노드까지 (동시에) 적용되는 것을 보장하는 방식이며, 
 - **비동기 방식** : Master 노드의 변경과 Slave 노드로의 적용이 시차를 두고 동기화되는 방식을 말한다.
 
-### ✅ 동기식 복제(Synchronous Replication)
+### 🔥 동기식 복제(Synchronous Replication)
 "데이터 일관성을 최우선으로 고려하는 방식"
 Primary(마스터) 노드에서 트랜잭션이 커밋되기 전에, Standby(리플리카) 노드가 WAL 로그를 적용할 때까지 기다림.
 
@@ -56,7 +59,7 @@ Primary(마스터) 노드에서 트랜잭션이 커밋되기 전에, Standby(리
 - 성능 저하: Standby 노드가 느려지면 Primary의 성능도 같이 떨어짐.
 - 장애 발생 시 가용성 저하 가능성: Standby가 응답하지 않으면 Primary에서 트랜잭션이 지연될 수 있음.
 
-### ✅ 비동기식 복제(Asynchronous Replication)
+### 🔥 비동기식 복제(Asynchronous Replication)
 "성능을 우선으로 고려하는 방식"
 Primary 노드는 트랜잭션을 커밋한 후, 즉시 응답을 반환하고 Standby 노드에는 WAL 로그를 비동기적으로 보냄.
 
@@ -96,9 +99,11 @@ Primary 노드는 트랜잭션을 커밋한 후, 즉시 응답을 반환하고 S
 
 모든 방식의 장점만을 가진 유일한 아키텍처는 존재하지 않는다. 다만 제품에서 어떠한 장점을 가장 중요하게 취할 것인가가 아키텍처를 설계하는 기준이 될 것이다.
 
-### ✅ 2. 복제 방식 기준 분류
+<br>
 
-### ✅ 물리적 복제
+## ✅ 2. 복제 방식 기준 분류
+
+### 🔥 물리적 복제
 - 데이터의 변경이력 파일인 로그 파일(redo/wal)을 Slave 서버로 전달하여 복제하는 원리
 - 전달된 로그파일에 있는 데이터 변경 이력을 토대로 블록 안의 데이터를 변경
 
@@ -134,7 +139,7 @@ Primary 노드는 트랜잭션을 커밋한 후, 즉시 응답을 반환하고 S
 
 ![alt text](./images/image4.png)
 
-### ✅ 논리적 복제
+### 🔥 논리적 복제
 - Master 서버에서 Slave 서버로 **SQL쿼리문**을 전달하여 변경 내용을 복제하는 프로세스
 - 논리적 복제는 데이터 베이스의 여러 복사본을 만들고 유지 관리 하기 위한 강력한 도구
 - 재해 복구, 확장, 데이터 마이그레이션 등 다양한 용도로 사용 가능
@@ -158,6 +163,8 @@ Primary 노드는 트랜잭션을 커밋한 후, 즉시 응답을 반환하고 S
     - 광역 네트워크, 저대역폭 네트워크에서 작동할 수 있기 때문에 물리적으로 거리가 먼 서버간 복제 가능
 
 ![alt text](./images/image5.png)
+
+<br>
 
 
 ## 📌 MySQL 에서의 Replication
@@ -217,4 +224,7 @@ MySQL은 Replication을 **'바이너리 로그'** 를 통하여 Replication이 �
 <a href="http://cloudrain21.com/mysql-replication">MySQL – Replication 구조</a>
 
 <a href="https://bitnine.tistory.com/572">Replication 컨셉, 다양한 방법</a>
+
+<a href="https://velog.io/@zpswl45/DB-Replication-%EA%B0%9C%EB%85%90-%EC%A0%95%EB%A6%AC
+">[DB] Replication이란 무엇이고 장점과 한계점 정리</a>
 
