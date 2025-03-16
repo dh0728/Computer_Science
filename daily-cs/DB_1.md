@@ -86,14 +86,6 @@ B+Tree는 모든 노드에 데이터(Value)를 저장했던 BTree와 다른 특�
 인덱스 컬럼은 부등호(< , >)를 이용한 순차 검색 연산이 자주 발생한다.
 -> B+Tree의 Linked List를 이용하면 효율적인 순차 검색이 가능.
 
-#### B+Tree의 SELECT, INSERT, DELETE
-- B+Tree의 SELECT는 B-Tree와 동일.
-
-## INSERT
-key의 수가 최대보다 적은 leaf node에 삽입하는 경우
-해당 node의 가장 앞이 아닌 곳에 삽입되는 경우는 단순히 삽입.
-하지만, leaf node의 가장 앞에 삽입되는 경우는, 해당 node를 가리키는 부모 node의 포인터의 오른쪽에 위치한 key를 K로 바꿔준다. 그리고 leaf node끼리 Linked list로 이어줘야 하므로 삽입된 key에 Linked list로 연결한다. 
-
 ### 추가 참고사항
 실제 InnoDB에서 쓰이는 B+Tree는 좀 더 복잡한 형상을 띄고 있. leaf node들뿐 아니라 그 상위 레벨의 노드들도 링크드 리스트로 연결되어 있으며, 싱글 링크드 리스트가 아닌 더블 링크드 리스트로 구현했다고 한다 
 - 노드 간 이동 및 구조 변경이 더 빠름
