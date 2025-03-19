@@ -137,5 +137,5 @@ RDBMS는 테이블 기반(Table based) DBMS로, 테이블들의 집합으로 데
 
 ### 출처
 
-<a href="https://velog.io/@kwontae1313/DB-%ED%81%B4%EB%9F%AC%EC%8A%A4%ED%84%B0%EB%A7%81DB-Clustering%EC%9D%B4%EB%9E%80">DB-클러스터링이란?</a>
+<a href="https://github.com/Seogeurim/CS-study/tree/main/contents/database">database</a>
 
