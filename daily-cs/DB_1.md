@@ -102,5 +102,7 @@ DBMS(MySQL, PostgreSQL, Oracle, MongoDB 등)마다 B+Tree의 차수(Order, M)를
 Key값이 크면 한 노드에 저장할 수 있는 Key의 개수가 줄어든다. 
 
 
+츨처
+
 
 
